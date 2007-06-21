@@ -1,0 +1,68 @@
+xrestop
+------------------------------------------
+Xrestop uses the X-Resource extension to provide 'top' like statistics 
+of each connected X11 client's server side resource usage. It is 
+intended as a developer tool to aid more efficient server resource usage 
+and debug server side leakage.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libX11_6-1.1.1-1
+  libXres1-1.0.2-1
+  libncurses8-5.5-3
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-1
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://freedesktop.org/wiki/Software/xrestop
+
+Canonical download:
+  http://projects.o-hand.com/sources/xrestop/
+
+-------------------------------------------
+
+Build instructions:
+  unpack xrestop-0.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xrestop-0.4-X.cygport all
+
+This will create:
+  /usr/src/xrestop-0.4-X-src.tar.bz2
+  /usr/src/xrestop-0.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/xrestop.exe
+  /usr/share/doc/Cygwin/xrestop-0.4.README
+  /usr/share/doc/xrestop-0.4/AUTHORS
+  /usr/share/doc/xrestop-0.4/COPYING
+  /usr/share/doc/xrestop-0.4/ChangeLog
+  /usr/share/doc/xrestop-0.4/INSTALL
+  /usr/share/doc/xrestop-0.4/README
+  /usr/share/man/man1/xrestop.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
