@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libX11_6 libXres1 libncurses8
+requires: libX11_6 libXres1 libncurses8
 sdesc: "X11 client resource usage monitor"
 ldesc: "Xrestop uses the X-Resource extension to provide 'top' like 
 statistics of each connected X11 client's server side resource usage. It 
